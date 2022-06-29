@@ -11,9 +11,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+ul { padding: 0; }
+
+li { list-style-type: none; }
 
 * {
   box-sizing: border-box;
@@ -23,6 +23,6 @@ a:hover {
   --primary: #4e56ff;
   --secondary: #48d359;
   --text-primary: #2c2a57;
-  --text-secondary: @4f5f82;
+  --text-secondary: #4f5f82;
   --shadow: rgba(0, 0, 0, 0.12);
 }

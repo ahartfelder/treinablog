@@ -1,13 +1,18 @@
-import '../styles/globals.css'
-import styles from '../styles/Home.module.css'
+import '../ui/styles/globals.css'
+import styles from '../ui/styles/Home.module.css'
 import type { AppProps } from 'next/app'
+import Link from 'next/link'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <header>
         <h1 className={styles.title}>
-          Treina<span className={styles['title-second-word']}>Blog</span>
+          <Link href={'/'}>
+            <a>
+              Treina<span className={styles['title-second-word']}>Blog</span>
+            </a>  
+          </Link>
         </h1>
       </header>
       <Component {...pageProps} />
